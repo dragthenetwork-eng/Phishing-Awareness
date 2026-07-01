@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishShield | Phishing Awareness Training</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2>PhishShield</h2>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#tips">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <h1>Learn to Identify Phishing Attacks</h1>
+
+        <p>
+            Improve your cybersecurity awareness by learning how to recognize
+            phishing emails, fake websites, and social engineering attacks.
+        </p>
+
+        <a href="#modules" class="btn">Start Learning</a>
+
+    </section>
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>What is Phishing?</h2>
+
+        <p>
+            Phishing is a cyberattack where attackers attempt to steal sensitive
+            information such as usernames, passwords, banking details, or personal
+            data by pretending to be a trusted organization.
+        </p>
+
+    </section>
+
+    <!-- Modules -->
+    <section id="modules">
+
+        <h2>Training Modules</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📧 Email Analysis</h3>
+                <p>Learn how to identify suspicious emails and common warning signs.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Fake Websites</h3>
+                <p>Understand how fake login pages trick users into revealing credentials.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧠 Social Engineering</h3>
+                <p>Discover psychological techniques attackers use to manipulate victims.</p>
+            </div>
+
+            <div class="card">
+                <h3>❓ Interactive Quiz</h3>
+                <p>Test your understanding after completing the lessons.</p>
+            </div>
+
+        </div>
+
+    </section>
+  
+    <section id="email-example">
+
+    <h2>Identify a Phishing Email</h2>
+
+    <p>
+        Look at the email below and identify the warning signs.
+    </p>
+
+    <div class="email-box">
+
+        <div class="email-header">
+            <p><strong>From:</strong> support-paypal@gmail.com</p>
+            <p><strong>To:</strong> john@example.com</p>
+            <p><strong>Subject:</strong> Urgent! Verify Your Account Immediately</p>
+        </div>
+
+        <div class="email-body">
+
+            <p>Dear Customer,</p>
+
+            <p>
+                We noticed unusual activity on your account.
+                Your account will be permanently suspended unless
+                you verify it within the next 24 hours.
+            </p>
+
+            <p>
+
+                Click here:
+
+                <br>
+
+                <span class="fake-link">
+                    http://paypal-secure-login.xyz
+                </span>
+
+            </p>
+
+            <p>Thank you.</p>
+
+        </div>
+
+    </div>
+
+    <div class="warning-list">
+
+        <h3>Warning Signs</h3>
+
+        <ul>
+
+            <li>❌ Sender uses a free Gmail address instead of an official company domain.</li>
+
+            <li>❌ Creates urgency to pressure you into acting quickly.</li>
+
+            <li>❌ Generic greeting ("Dear Customer") instead of your name.</li>
+
+            <li>❌ Suspicious link that does not match the official website.</li>
+
+            <li>❌ Threatens account suspension to create fear.</li>
+
+        </ul>
+
+    </div>
+
+</section>
+    <!-- Tips -->
+    <section id="tips">
+
+        <h2>Best Practices</h2>
+
+        <ul>
+            <li>✔ Verify the sender's email address.</li>
+            <li>✔ Never click suspicious links.</li>
+            <li>✔ Check website URLs carefully.</li>
+            <li>✔ Enable Multi-Factor Authentication (MFA).</li>
+            <li>✔ Keep your software updated.</li>
+            <li>✔ Report suspicious emails to your organization.</li>
+        </ul>
+
+    </section>
+
+    <!-- ================= QUIZ ================= -->
+
+<section id="quiz">
+
+    <h2>Phishing Awareness Quiz</h2>
+
+    <p>Test your knowledge by answering the following questions.</p>
+
+    <div class="quiz-container">
+
+        <h3 id="question"></h3>
+
+        <div id="answers" class="answers"></div>
+
+        <button id="nextBtn" class="btn">Next Question</button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 PhishShield | Cybersecurity Awareness Project</p>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
